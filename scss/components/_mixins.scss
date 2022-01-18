@@ -1,0 +1,20 @@
+@use '../custom' as *;
+@mixin gradient {
+	background-image: linear-gradient(
+		to right,
+		rgba($primary, 0.95),
+		rgba($secondary, 0.95)
+	);
+}
+@mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@mixin flex-center($direction: row) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: $direction;
+}

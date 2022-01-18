@@ -1,0 +1,29 @@
+@use '../custom';
+.campanies {
+	padding: 0 0 5rem 0;
+	&--logo-box {
+		height: 4rem;
+		margin-bottom: 2rem;
+		padding: 0.5rem;
+		text-align: center;
+		position: relative;
+		cursor: pointer;
+		&::after {
+			content: '';
+			position: absolute;
+			backdrop-filter: grayscale(100%);
+			background-color: rgba(#333, 0.025);
+			width: 0;
+			height: 100%;
+			top: 0;
+			left: 0;
+			transition: width 0.4s;
+		}
+		&:hover::after {
+			width: 100%;
+		}
+		img {
+			height: 100%;
+		}
+	}
+}

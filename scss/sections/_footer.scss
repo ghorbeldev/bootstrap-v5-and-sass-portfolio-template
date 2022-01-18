@@ -1,0 +1,100 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer {
+	padding-top: 1.5rem;
+	background-color: $footer;
+	.contact-box {
+		position: relative;
+		&-icon {
+			stroke: $primary;
+			font-size: 1rem;
+			margin-right: 1rem;
+			margin-left: 0.5rem;
+			@include media-breakpoint-up(sm) {
+				margin-right: 0;
+				margin-left: 0;
+				width: 4rem;
+				font-size: 1.4rem;
+			}
+		}
+		&-info {
+			padding: 0.4rem;
+			font-weight: 600;
+			&--title {
+				color: $white;
+				text-decoration: none;
+				font-size: 1rem;
+				display: block;
+			}
+			&--subtitle {
+				color: $gray-600;
+				font-size: 0.9rem;
+				text-decoration: none;
+				@include media-breakpoint-up(sm) {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	&-social {
+		background-color: #212121;
+		a {
+			color: white;
+			text-decoration: none;
+			i {
+				font-size: 1rem;
+				margin-left: 0.5rem;
+				margin-right: 0.5rem;
+				@include media-breakpoint-up(sm) {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+	&-content {
+		ul {
+			li {
+				margin-bottom: 0.75rem;
+				a {
+					color: $white;
+					text-transform: capitalize;
+					text-decoration: none;
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+	&-copyright {
+		background-color: $black;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		p {
+			color: $gray-600;
+			a {
+				text-decoration: none;
+				color: $white;
+				&:hover {
+					color: $primary;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.scroll-to-top {
+	right: 15px;
+	bottom: 15px;
+	width: 2.5rem;
+	height: 2.5rem;
+	@include flex-center;
+	i {
+		font-size: 1.25rem;
+	}
+	&:hover {
+		background-color: darken($primary, 10%) !important;
+	}
+}

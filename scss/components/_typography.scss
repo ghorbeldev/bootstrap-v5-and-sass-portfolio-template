@@ -1,0 +1,85 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+.display-2 {
+	margin-bottom: 1rem;
+	text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+
+	&-intro {
+		display: inline-block;
+		font-weight: 700;
+	}
+	&-description {
+		font-size: 1rem;
+		display: block;
+		margin-top: 1.2rem;
+		text-transform: none;
+		@include media-breakpoint-up(lg) {
+			font-size: 1.4rem;
+			display: inline-block;
+		}
+	}
+}
+
+.heading-line {
+	position: relative;
+	margin: 1.2rem 0 4.5rem;
+	&::before {
+		position: absolute;
+		content: '';
+		width: 11rem;
+		height: 3px;
+		background-color: $primary;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 120%;
+	}
+	&::after {
+		position: absolute;
+		content: '';
+		width: 2rem;
+		height: 1rem;
+		background-color: $primary;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 120%;
+	}
+}
+
+.display-3 {
+	font-family: 'Poppins', sans-serif;
+	&-title {
+		font-size: 1.8rem;
+		text-transform: capitalize;
+		font-weight: 600;
+		font-family: 'Poppins', sans-serif;
+		display: inline-block;
+		@include gradient;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	&-head {
+		position: relative;
+		padding-bottom: 3rem;
+		margin-bottom: 3rem;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 4ch;
+			background-color: $white;
+			height: 0.1rem;
+			left: 50%;
+			transform: translate(-50%);
+			top: 100%;
+		}
+		+ p {
+			font-size: 1.1rem;
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.gradient {
+	@include gradient;
+}
