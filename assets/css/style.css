@@ -11164,6 +11164,11 @@ textarea.form-control-lg {
   display: inline-block;
   font-weight: 700;
 }
+@media (max-width: 575.98px) {
+  .display-2-intro {
+    font-size: 1.8rem;
+  }
+}
 .display-2-description {
   font-size: 1rem;
   display: block;
