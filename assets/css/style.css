@@ -11398,12 +11398,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 .portfolio .box {
-  transition: padding 0.6s 0.4s, opacity 0.8s 0.2s, width 1s;
-}
-.portfolio .box.disable {
-  opacity: 0.2;
-  width: 0;
-  padding: 0;
+  transition: all 0.5s;
 }
 .portfolio-box {
   width: 100%;
