@@ -444,15 +444,15 @@
         </p>
       </div>
       <div class="row text-center mt-5 mb-5 g-3">
-        <div class="col-md-12">
-          <button class="btn btn-outline-primary" type="button">All</button>
-          <button class="btn btn-outline-primary" type="button">Website</button>
-          <button class="btn btn-outline-primary" type="button">Design</button>
-          <button class="btn btn-outline-primary" type="button">Mockup</button>
+        <div class="col-md-12 portfolio__tabs">
+          <button data-category="all" class="btn btn-outline-primary active" type="button">All</button>
+          <button data-category="website" class="btn btn-outline-primary" type="button">Website</button>
+          <button data-category="design" class="btn btn-outline-primary" type="button">Design</button>
+          <button data-category="mockup" class="btn btn-outline-primary" type="button">Mockup</button>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div data-category="website" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-1.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -463,7 +463,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="website" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-2.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -474,7 +474,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="mockup" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-3.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -485,7 +485,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="design" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-4.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -496,7 +496,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="design" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-5.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -507,7 +507,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="mockup" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-6.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -518,7 +518,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="website" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-7.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -529,7 +529,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="design" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-8.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -540,7 +540,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div data-category="mockup" class="col-lg-4 col-md-6 box">
           <div class="portfolio-box shadow d-flex align-items-center">
             <img class="img-fluid" src="./images/portfolio/portfolio-9.jpg" alt="Portfolio">
             <div class="portfolio-info">
@@ -780,6 +780,7 @@
   </a>
   <!-- End Scroll To Top Button -->
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

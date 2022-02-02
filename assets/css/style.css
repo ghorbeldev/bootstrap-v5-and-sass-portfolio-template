@@ -11391,8 +11391,19 @@ textarea.form-control-lg {
 .portfolio {
   padding: 4rem 0;
 }
-.portfolio button {
+.portfolio .btn {
   text-transform: capitalize;
+}
+.portfolio .btn.active {
+  color: #fff;
+}
+.portfolio .box {
+  transition: padding 0.6s 0.4s, opacity 0.8s 0.2s, width 1s;
+}
+.portfolio .box.disable {
+  opacity: 0.2;
+  width: 0;
+  padding: 0;
 }
 .portfolio-box {
   width: 100%;
